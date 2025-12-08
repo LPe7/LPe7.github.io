@@ -1,25 +1,25 @@
 <script lang="ts">
-  import TableContents from "$lib/blockons/TableContents.svelte";
-  import WebDev from "$lib/blockons/WebDev.svelte";
-  import Bits from "$lib/blockons/Bits.svelte";
-  import Python from "$lib/blockons/Python.svelte";
-  import Workflow from "$lib/blockons/Workflow.svelte";
-  import Milky from "$lib/blockons/Milky.svelte";
-  import LowLevel from "$lib/blockons/LowLevel.svelte";
-  import Self from "$lib/blockons/Self.svelte";
+  import TableContents from "$lib/blockons_de/TableContents.svelte";
+  import WebDev from "$lib/blockons_de/WebDev.svelte";
+  import Bits from "$lib/blockons_de/Bits.svelte";
+  import Python from "$lib/blockons_de/Python.svelte";
+  import Workflow from "$lib/blockons_de/Workflow.svelte";
+  import Milky from "$lib/blockons_de/Milky.svelte";
+  import LowLevel from "$lib/blockons_de/LowLevel.svelte";
+  import Self from "$lib/blockons_de/Self.svelte";
+  import Fr from "$lib/blockons_de/Fr.svelte";
 
   import Blockon from "$lib/blockons/Blockon.svelte"
-    import De from "$lib/blockons/De.svelte";
 </script>
 
 <div class="page">
   <div class="main">
-    <De />
+    <Fr />
     <TableContents />
     <Self />
-    <WebDev />
     <Bits />
     <LowLevel />
+    <WebDev />
     <Workflow />
     <Python />
     <Milky />
@@ -27,17 +27,17 @@
 
   <div class="footer">
     <p>
-      Merci d'avoir lu jusqu'ici&nbsp;!
+      Danke, dass sie bis hierher gelesen haben!
     </p>
 
     <p>
-      Vous pouvez également regarder mon <a href="https://github.com/lapingenieur">GitHub</a>
-      ou me contacter par mail&nbsp;: <a href="mailto:lapingenieur@gmail.com">lapingenieur@gmail.com</a>.
+      Sie können auch mein <a href="https://github.com/lapingenieur">GitHub</a> ansehen
+      oder mich per E-Mail kontaktieren: <a href="mailto:lapingenieur@gmail.com">lapingenieur@gmail.com</a>.
     </p>
 
     <p>
-      Ce site est hébergé grâce à <a href="https://pages.github.com/">GitHub Pages</a>
-      et son code source est exposé sur <a href="https://github.com/lapingenieur/lapingenieur.github.io">ce dépôt</a>.
+      Diese Webseit wurde dank <a href="https://pages.github.com/">GitHub Pages</a> gehostet
+      und ihre Code befindet sich in <a href="https://github.com/lapingenieur/lapingenieur.github.io">diesem Repository</a>.
       <br />
 
       Candidat Parcoursup n°500 506 — lapingenieur — Avril 2023.
