@@ -91,12 +91,12 @@
     let color = "#"
     function randomColors() {
         color = "#"
-        for (let i=0; i<3; i++) {
+        for (let i=0; i<6; i++) {
             color += random(colors)
         }
     }
     randomColors()
-    setInterval(randomColors, 2000)
+    setInterval(randomColors, 1000)
 
     updateUi()
     setInterval(updateUi, 1000)
