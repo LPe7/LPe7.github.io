@@ -1,12 +1,15 @@
 <script lang="ts">
     let days = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
     let months = ["Janvier", "Février"]
-
+    
     let date = new Date()
     let currentTime = 0
     let dateDebut = new Date("2026-01-27")
     let dateFin = new Date("2026-01-30 17:30")
     let schedules = [ [8.5, 11.5], [13, 17.5] ]
+    
+    let brightColors = [ "#ff595e", "#ffca3a", "#8ac926", "#1982c4", "#6a4c93", "#ff924c", "#ff4d6d", "#4cc9f0", "#f72585" ]
+    let lastColor = ""
 
     let dates = ""
     let status = ""
@@ -87,13 +90,11 @@
         return items[Math.floor(Math.random()*items.length)]
     }
 
-    let colors = "bcdef".split("")
-    let color = "#"
+    let color = ""
     function randomColors() {
-        color = "#"
-        for (let i=0; i<3; i++) {
-            color += random(colors)
-        }
+        do { 
+            color = brightColors[Math.floor(Math.random() * brightColors.length)]
+            } while (color === lastColor)
     }
     randomColors()
     setInterval(randomColors, 2000)
